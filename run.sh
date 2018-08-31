@@ -1,7 +1,9 @@
+#!/bin/bash
+
 database="${COCKROACH_DB:-helloworld}";
 user="${COCKROACH_USER:-helloworld}";
 
-if [ $COCKROACH_SECURE ]
+if [ "$COCKROACH_SECURE" ]
 then
   cockroach start \
   --certs-dir=certs;
