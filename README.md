@@ -8,7 +8,5 @@ Dockerfile for running cockroachdb in alpine docker
     The user that will be granted privileges to $COCKROACH_DB
 ## Running
 ```
-sudo docker run jro11/cockroachdb-alpine-docker -e \
-COCKROACH_DB=helloworld \
-COCKROACH_USER=helloworld
+sudo docker run --env "COCKROACH_DB=helloworld,COCKROACH_USER=helloworld" jro11/cockroachdb-alpine-docker
 ```
