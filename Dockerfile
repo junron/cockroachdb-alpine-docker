@@ -10,6 +10,8 @@ ENV COCKROACH_SECURE=false
 
 RUN cp cockroach-latest.linux-musl-amd64/cockroach /usr/local/bin/cockroach
 
+COPY run.sh run.sh
+
 RUN apk add bash
 
 EXPOSE 26257 8080
