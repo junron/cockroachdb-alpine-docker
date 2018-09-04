@@ -13,4 +13,4 @@ else
   CREATE USER ${user}; \
   GRANT ALL ON DATABASE ${database} TO ${user};" | cockroach sql --insecure -u root;
 fi
-while :; do sleep 2073600; done'"
+while :; do sleep 2073600; done
